@@ -19,11 +19,13 @@ Route::get('/', function () {
 });
 */
 
+/*
 Route::get('/', 'WebsController@index');
 Route::get('/home', 'WebsController@index');
 Route::get('/about', 'WebsController@about');
 Route::get('/contact', 'WebsController@contact');
 Route::get('/blog', 'WebsController@blog');
+*/
 
 // Using controller for resolve the routes
 /*
@@ -31,3 +33,5 @@ Route::get('/index/{id}', 'ExampleController@index');
 Route::get('/consoleController', 'ConsoleController@console');
 Route::get('/consoleControllerResources', 'ConsoleResourcesController@index');
 */
+
+Route::resource('posts', 'ConsoleResourcesController');

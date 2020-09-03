@@ -23,7 +23,7 @@ class ConsoleResourcesController extends Controller
      */
     public function create()
     {
-        //
+        return 'You are in create method';
     }
 
     /**
@@ -56,7 +56,7 @@ class ConsoleResourcesController extends Controller
      */
     public function edit($id)
     {
-        //
+        return "You are in Edit Method with id: $id";
     }
 
     /**
